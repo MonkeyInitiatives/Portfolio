@@ -77,6 +77,11 @@ body, html {
   max-width: 128px;
   max-height: 128px;
 }
+.portfolio-icon{
+  max-width: 320px;
+  max-height: 320px;
+  padding: 20px;
+}
 .contact-icon{
   max-width: 96px;
   max-height: 96px;
@@ -132,6 +137,11 @@ h3 {
     background-attachment: scroll;
   }
 }
+@media screen and (min-width: 993px) {
+  #mobile-portfolio{
+    display: none;
+  }
+}
 @media screen and (max-width: 992px) {
   .contact-icon{
       max-width: 58px;
@@ -141,6 +151,7 @@ h3 {
   .service-icon{
       max-width: 64px;
       max-height: 64px;
+      padding: 10px;
   }
   #carouselExampleIndicators{
     visibility: hidden;
@@ -150,6 +161,12 @@ h3 {
   }
   .bgimg-2 {
     background-image: none;
+  }
+  #mobile-portfolio{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
   }
   
 }
